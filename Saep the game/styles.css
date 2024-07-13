@@ -1,0 +1,214 @@
+@font-face {
+    font-family:'MeuTexto';  /* Dê um nome à sua fonte */
+    src: url('fonts/font1.ttf') format('truetype');
+    /* Adicione outros formatos de fonte, se necessário, como woff, woff2, etc. */
+}
+
+@font-face {
+    font-family:'MeuTexto2';  /* Dê um nome à sua fonte */
+    src: url('fonts/font2.ttf') format('truetype');
+    /* Adicione outros formatos de fonte, se necessário, como woff, woff2, etc. */
+}
+
+body, html {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    background-color: #55749e; /* Adicione uma cor de fundo opcional */
+    transition: background 0.5s ease;
+}
+
+header {
+    text-align: center;
+}
+
+.título {
+    margin-top: 30px;
+    max-width: 20%;
+    height: auto;
+    animation: floatAnimation 2s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+header h1 img.título {
+    height: 20vh;
+    animation: floatAnimation 2s ease-in-out infinite;
+}
+
+header nav {
+    margin-top: 30px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    font-family: 'MeuTexto2', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 0; /* Ajuste este valor para alterar o arredondamento das bordas */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1); /* Ajuste este valor para alterar o nível de escala da animação */
+}
+
+footer {
+    font-family: 'MeuTexto', sans-serif;
+    text-align: center;
+    padding: 5px;
+    background-color: #285073;
+    width: 100%;
+    color: azure;
+    position: relative;
+}
+
+#pato {
+    max-width: 50px;
+    height: auto;
+    margin-top: auto;
+    position: absolute;
+    bottom: 100%; /* Posiciona o pato acima da borda do footer */
+    left: 0;
+    animation: andarPato 10s linear infinite;
+}
+
+@keyframes andarPato {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+
+
+
+.secao {
+   
+    text-align: center;
+    max-width: 600px; /* Ajuste conforme necessário para limitar a largura do conteúdo */
+    margin: 0 auto; /* Centraliza a seção na página */
+}
+
+#sobre h2 {
+    font-family: 'MeuTexto2', sans-serif;
+}
+
+#sobre p {
+    font-family: 'MeuTexto', sans-serif;
+}
+
+.secao {
+    display: none;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.5s ease; /* Adiciona uma transição de 0.5 segundos ao desvanecer */
+}
+
+.mostrar {
+    opacity: 1 !important;
+    display: block !important;
+}
+
+
+
+
+.secao{
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+   
+}
+
+h2 {
+    font-family: 'MeuTexto2', sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* Permite o posicionamento absoluto dos elementos filhos */
+    width: 60vh;
+}
+
+#duvida{
+    height: 15vh;
+}
+
+label {
+    margin-top: 10px;
+    display: flex;
+    align-items: left;
+    left: 0;
+    top: -20px; /* Ajuste a distância conforme necessário */
+    font-family: 'MeuTexto2', sans-serif; /* Substitua 'NovaFonte' pela fonte desejada */
+    color: #ffffff; /* Cor do texto */
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #333; /* Ajuste a largura da borda conforme necessário */
+    border-radius: 0; /* Bordas quadradas */
+    background-color: #285073;
+    color: #ffffff; /* Cor do texto */
+    font-family: 'MeuTexto', sans-serif; /* Fonte do texto */
+    position: relative; /* Adiciona um contexto de posicionamento para elementos filhos absolutos */
+}
+
+/* ... Outras regras de estilo ... */
+
+button {
+    font-family: 'MeuTexto2', sans-serif;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border: 2px solid #333;
+    border-radius: 0; /* Ajuste este valor para alterar o arredondamento das bordas */
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+    color: #fff;
+    transform: scale(1.1); /* Ajuste este valor para alterar o nível de escala da animação */
+}
+
+
+
